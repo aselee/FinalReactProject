@@ -16,8 +16,8 @@ export default class CryptoContain extends Component {
   }
   componentDidMount() {
     axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC,XRP,XLM,TRX,ICX,DOGE,XMR&tsyms=USD')
-      .then(coinList => {
-        const cryptos = coinList.data;
+      .then(res => {
+        const cryptos = res.data;
         this.setState({cryptos: cryptos})
       })
   }
@@ -44,3 +44,4 @@ export default class CryptoContain extends Component {
 		return CardExampleExpandable();
 	}
 }
+/*testing*/
