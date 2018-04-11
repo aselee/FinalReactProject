@@ -25,7 +25,7 @@ export default class CryptoContain extends Component {
 
   render() {
     const CardExampleExpandable = () => (
-      <Card zDepth={1}>
+      <Card>
         {Object.keys(this.state.cryptos).map((key) => (
         <Card zDepth={5}>
             <span className="left">{key} </span>
